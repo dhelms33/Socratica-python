@@ -1,7 +1,7 @@
 import random
 
 #to see methods avaliable we should print dir
-
+#left off 2:59
 print(dir(random))
 
 print(help(random.random))
