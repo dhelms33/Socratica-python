@@ -9,7 +9,8 @@ dir(logging)
 class LoggingLumberjack:
     def __init__(self):
     #create and configure logger
-        self.logging.basicConfig(filename = "C:\\python\\Lumberjack.Log", level = logging.DEBUG) #basicconfig sets level to 30
+        self.logging.basicConfig(filename = "C:\\python\\Lumberjack.Log", 
+                                 level = logging.DEBUG) #basicconfig sets level to 30
     #if file does not exist python will create it
     
         self.logger = logging.getLogger()
@@ -17,6 +18,7 @@ class LoggingLumberjack:
     
     #Test the logger
         self.logger.info("Our first info message.")
+        self.logger.info("Our second message")
     
         print(logger.level)
     
@@ -35,7 +37,11 @@ class LoggingLumberjack:
             self.LOG_FORMAT= "%(levelname)s %asctime)s - %(message)"
             self.logging.basicConfig(filename = "C:\\python\\EnragedLumberjack.Log", 
                             level = logging.DEBUG, 
-                            format = LOG_FORMAT)
+                            format = LOG_FORMAT,
+                            filemode = 'w')
+            logger = self.logging.getLogger()
+            #Test the logger
+            self.logger.info("Our SECOND message in Enraged Lumber")
     
     if __name__ == "__main__":
         new_logging_lumber = LoggingLumberjack()
