@@ -1,7 +1,7 @@
 #Logging allows us to determine the cause by writing status messages to a file or other streams
 #Five built in levels: Debug, Info, Warning, Error, Critical
 
-#Stopped at 3:22
+#Stopped at 4:37
 
 import logging
 #allows us to look inside of module
