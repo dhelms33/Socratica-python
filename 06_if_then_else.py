@@ -10,6 +10,13 @@ class Choices:
         else:
             return("Wait, what?!")
 if __name__ == "__main__":
+    try:
+        user_input = input("Please input a string to be judged!")
+        obj_instance = Choices(user_input)
+        result = obj_instance.choices_input()
+        print(result)
+    except ValueError as ve:
+        print(f"Error encountered: " {ve})
     
         
             
