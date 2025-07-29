@@ -1,7 +1,7 @@
 from math import pi
 
 """"""
-def calc_pi(r):
+def calc_area(r):
     return pi*(r**2)
 
 #test function
