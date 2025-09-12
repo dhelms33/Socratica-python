@@ -21,5 +21,8 @@ if __name__ == "__main__":
     user2.first_name = "Frank"
     user2.last_name = "Poop"
     
+    #discrepancy in fields
+    user1.age = 37
+    user2.favorite_book = "2001: A Space Odyssey"
     
     
