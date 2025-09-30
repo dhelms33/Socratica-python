@@ -1,7 +1,13 @@
-#left off 3:37
+#left off 7:13
 #make a class that does nothing
 class User:
-    pass
+    def __init__(self, full_name, birthday):
+        self.name = full_name
+        self.birthday = birthday
+        #extract first and last names
+        name_pieces = full_name.split(" ")
+        self.first_name = name_pieces[0]
+        self.last_name = name_pieces[-1]
 
 if __name__ == "__main__":
     user1 = User()
@@ -24,5 +30,8 @@ if __name__ == "__main__":
     #discrepancy in fields
     user1.age = 37
     user2.favorite_book = "2001: A Space Odyssey"
+
+#print(user2.age)
+# results in error
     
     
