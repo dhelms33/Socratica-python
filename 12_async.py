@@ -1,5 +1,6 @@
 import asyncio 
 import time
+#stopped 4:20
 #subroutine block of code that can be called as needed, run until done
 
 #coroutine special f((x) that can be called and paused 
