@@ -1,4 +1,4 @@
-#left off 5:53
+#left off 7:17
 class User:
     """ Member of friend face. Only stores first and last names and birthday."""
     def __init__(self, full_name, birthday):
@@ -7,7 +7,7 @@ class User:
         
     def extract_names(self):
         #Extract first and last names
-        name_pieces = full_name.split(" ")
+        name_pieces = self.name.split(" ")
         self.first_name = name_pieces[0]
         self.last_name = name_pieces[-1] #let this be the last thing they entered
         return self.first_name + self.last_name
