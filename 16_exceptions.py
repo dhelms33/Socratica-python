@@ -1,4 +1,5 @@
-import 
+import logging
+import time
 class LearningExceptions:
     def correct_loop(num):
         try:
@@ -15,3 +16,15 @@ class LearningExceptions:
     
     def read_file_timed(path):
         #6:29, go back and watch
+        """Returns the contents of the file at 'path' and measure time required"""
+        start_time = time.time()
+        try:
+            f = open(path, mode = "rb")
+            data = f.read()
+            return data
+        except FileNotFoundError as err:
+            logger.error(err)
+            raise
+        else:
+            f.close
+        
