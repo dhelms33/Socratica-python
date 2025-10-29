@@ -26,5 +26,5 @@ class LearningExceptions:
             logger.error(err)
             raise
         else:
-            f.close
+            f.close()
         
