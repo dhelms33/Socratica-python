@@ -2,7 +2,11 @@ class SpiffoFriendNetwork:
     def __init__(self, id, message):
         self.id = id
         self.message = message
-    def create_dict(self.id, self.message):
-        for range in zip(self.id, self.message):
-            user_dict += {self.id:f"{self.message}"}
+    def create_dict(user_input):
+        for item in range(len(user_input)):
+           ui = user_input.split()
+            key = self.id[0]
+            value = self.message[-1]
+            for range in ui:
+                user_dict[key] += {value}
         return user_dict
