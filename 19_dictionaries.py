@@ -22,6 +22,14 @@ class SpiffoFriendNetwork:
     def get_userid():
         u_id_post_og = post_og["user_id"]
         return u_id_post_og
+    def loop_dictionary():
+        for item in range(len(post_og)):
+            if 'location' in post_og:
+                return post_og['location']
+            else: 
+                error_message = "location not in post_og"
+        return error_message
+                
         
     
     
