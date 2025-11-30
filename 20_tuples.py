@@ -1,4 +1,5 @@
 #left off 2:22
+import timeit
 class TuplesvLists:
     def __init__(self):
         pass
@@ -18,6 +19,15 @@ class TuplesvLists:
     #print("List methods")
     #print("tuples methods")
     #lists occupy more memory than tuples
+    #tuples are immutable
+    def get_time_list():
+        list_test = timeit.timeit(stmt = "[1,2,3,4,5]", number=10000000)
+        return list_test
+    def get_time_tuple():
+        tuple_test = timeit.timeit(stmt = "(1,2,3,4,5)", number = 10000000)
+        return tuple_test
+if __name__ == "__main__":
+    
     
     #print(dir(sys))
     #print(help(sys.getsizeof))
