@@ -22,6 +22,14 @@ class TuplesvLists:
         test2 = ("a", "b")
         test3 = ("a", "b", "c")
         return(empty_tuple+test1+test2+test3)
+    def makes_alt_tuples():
+        #can also make tuples without ()
+        empty_tuple = () 
+        test1 = "a", 
+        test2 = "a", "b"
+        test3 = "a", "b", "c"
+        return(empty_tuple+test1+test2+test3)
+        
         
         test
     #print("List methods")
