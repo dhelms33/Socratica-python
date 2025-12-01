@@ -1,4 +1,4 @@
-#left off 5:12
+#left off 7:00
 import timeit
 class TuplesvLists:
     def __init__(self):
@@ -48,6 +48,10 @@ class TuplesvLists:
     def get_age_survey(survey):
         age = survey[0]
         return age
+    def make_survey2(age, country, knows_python):
+        survey2 = ()
+        age, country, knows_python = survey2 #special way to assign a tuple
+        return survey2
         
 if __name__ == "__main__":
     obj_instance = TuplesvLists
