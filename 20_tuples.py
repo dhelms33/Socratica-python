@@ -1,4 +1,4 @@
-#left off 4:22
+#left off 5:12
 import timeit
 class TuplesvLists:
     def __init__(self):
@@ -42,6 +42,13 @@ class TuplesvLists:
     def get_time_tuple():
         tuple_test = timeit.timeit(stmt = "(1,2,3,4,5)", number = 10000000)
         return tuple_test
+    def make_tuple(age, country, knows_python):
+        survey = (age, country, knows_python)
+        return survey
+    def get_age_survey(survey):
+        age = survey[0]
+        return age
+        
 if __name__ == "__main__":
     obj_instance = TuplesvLists
     tuples_count = obj_instance.get_list_prime()
