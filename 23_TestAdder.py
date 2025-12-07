@@ -5,12 +5,14 @@ class TestAdder:
     
     def half_adder(self.a, self.b):
         carry = False
-        if self.a == 1 and self.b == 1:
+        if self.a < 0 or self.b < 0:
+            raise ValueError("The input to a half adder cannot be negative.")
+        elif self.a == 1 and self.b == 1:
             carry = True
             return(0)
         elif self.a == 1 and self.b == 0:
             return(1)
-        elif self. a == 0 and self.b == 1:
+        elif self.a == 0 and self.b == 1:
             return(1)
         else:
             return 0

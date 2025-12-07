@@ -4,3 +4,7 @@ class TestAdder:
     def test__area(unittest.TestCase):
         self.assertAlmostEqual(half_adder(1,1), carry = True, 0)
         self.assertAlmostEqual(half_adder(1,0), carry = False, 1)
+    
+    def test_values(self):
+        self.assertRaises(ValueError, half_adder, -1,1)
+        
