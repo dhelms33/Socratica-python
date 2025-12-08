@@ -2,6 +2,9 @@ class TestAdder:
     def __init__(self,a,b):
         self.a = a
         self.b = b
+    def helper_carry():
+        carry = True
+        return(1,0)
     
     def half_adder(self.a, self.b):
         carry = False
@@ -9,7 +12,7 @@ class TestAdder:
             raise ValueError("The input to a half adder cannot be negative.")
         elif self.a == 1 and self.b == 1:
             carry = True
-            return(0)
+            return(helper_carry())
         elif self.a == 1 and self.b == 0:
             return(1)
         elif self.a == 0 and self.b == 1:
