@@ -18,5 +18,4 @@ class TestAdder:
         elif self.a == 0 and self.b == 1:
             return(1)
         else:
-            return 0
-s        
+            return 0      
