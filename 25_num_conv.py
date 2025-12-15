@@ -3,5 +3,9 @@ class Converter:
         self.number = number
     
     def int_to_float(self.number):
-        float = float(self.number)
-        return float
+        float_num = float(self.number)
+        return float_num
+    
+    def float_to_int(self.number):
+        int_to_num = int(self.number)
+        return int_to_num
