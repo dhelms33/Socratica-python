@@ -1,3 +1,4 @@
+import statistics
 class TemperatureMap:
     def __init__(self, temp, ui):
         self.temp = temp
@@ -25,7 +26,20 @@ class TemperatureMap:
         list_mapped_values = list(map(c_to_f, temps))
         return(list_mapped_values)
     
+    data_fuel_temps = [1.3,2.7,.8,4.3,4.1,-.1]
+    def get_avg_fuel_temps(data_fuel_temps):
+        avg_fuel_arr = statistics.mean(data_fuel_temps)
+        return avg_fuel_arr
+    def get_filtered_avg_fuel_temps(self.ui):
+        result = 0
+        for temp in range(len(data_fuel_temps)):
+            result = filter(get_avg_fuel_temps, data_fuel_temps)
+        return result
+    
     if __name__ == "__main__":
         try:
             user_input = int(input("Please input a celsius temperature: "))
             obj_instance = TemperatureMap()
+            result_final = obj_instance.c_to_f(34,52)
+        except ValueError:
+            return("This is not a number, either int or double, try again.")
