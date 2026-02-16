@@ -35,6 +35,9 @@ class TemperatureMap:
         for temp in range(len(data_fuel_temps)):
             result = filter(get_avg_fuel_temps, data_fuel_temps)
         return result
+    def remove_missing_data(data):
+        cleaned_data = list(filter(None, data))
+        return cleaned_data
     
     if __name__ == "__main__":
         try:
@@ -43,3 +46,5 @@ class TemperatureMap:
             result_final = obj_instance.c_to_f(34,52)
         except ValueError:
             return("This is not a number, either int or double, try again.")
+        
+        
