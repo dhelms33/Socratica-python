@@ -30,6 +30,24 @@ class TemperatureMap:
     def get_avg_fuel_temps(data_fuel_temps):
         avg_fuel_arr = statistics.mean(data_fuel_temps)
         return avg_fuel_arr
+    
+    def get_perimeter(l:int,w:int)-> int:
+        try:
+            perimeter = 2*(l*w)
+            return perimeter
+        except:
+            ValueError as e:
+                return("{e} is not a valid input. Please try again")
+            
+    def get_mode(numbers:list[int])->int:
+        mode = statistics.mode(list)
+        return mode
+    
+    def get_filtered_mode(numbers:list[int])-list[int]:
+        filtered_mode = list(filter(get_mode, data_fuel_temps))
+        #only calling filter(get_mode, data_fuel_temps results in just the object)
+        return filtered_mode
+    
     def get_filtered_avg_fuel_temps(self.ui):
         result = 0
         for temp in range(len(data_fuel_temps)):
