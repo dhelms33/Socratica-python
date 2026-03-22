@@ -1,6 +1,7 @@
 import unittest
 from test_pi import circle_area
 from math import pi
+from test_pi import circle_circumference
 
 class TestCircleArea(unittest.TestCase):
     def test_area(self):
@@ -20,4 +21,8 @@ class TestCircleArea(unittest.TestCase):
         self.assertRaises(TypeError, circle_area, "String")
         
         
-        
+class TestCircleCircumference(unittest.TestCase):
+    def test_circumference(self):
+        #test areas when raius >= 0
+        self.assertAlmostEqual(1, 2*pi*1) 
+        self.assertAlmostEqual(2, 2*pi*2)

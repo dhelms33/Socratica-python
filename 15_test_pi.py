@@ -11,6 +11,13 @@ def circle_area(r):
         raise ValueError("Value cannot be negative.")
     return pi*(r**2)
 
+def circle_circumference(r):
+    if type(c) not in [int, float]:
+        raise TypeError("The circumference must be a non-negative real number")
+    if r < 0:
+        raise ValueError("Value cannot be negative")
+    return 2*pi*r
+
 #test function 
 radii =[2, 0, -3, 2+5j, True, "radius"]
 message = "Area of circles with {radius} is {area}." 
