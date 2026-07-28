@@ -26,3 +26,5 @@ class TestCircleCircumference(unittest.TestCase):
         #test areas when raius >= 0
         self.assertAlmostEqual(1, 2*pi*1) 
         self.assertAlmostEqual(2, 2*pi*2)
+    class TestCircleSphere(unittest.TestCase):
+        self.assertAlmostEqual(1, 4/3*pi*1)
