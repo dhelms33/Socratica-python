@@ -1,3 +1,5 @@
+import math
+#stopped 2:35
 class MathyMath:
     def __init__(self, num):
         self.num = num
